@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abisekh T – AI/ML Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef3f1; --surface:#ffffff; --ink:#10201c; --muted:#546560; --line:#cfdcd7;
+  --out:#cdebc5; --accent:#0b6b57; --accent-ink:#ffffff;
+  --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1815; --surface:#16251f; --ink:#e6efeb; --muted:#9db0a9; --line:#27393290;
+    --out:#1f4a3b; --accent:#5fd1b0; --accent-ink:#06201a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1815; --surface:#16251f; --ink:#e6efeb; --muted:#9db0a9; --line:#273932;
+  --out:#1f4a3b; --accent:#5fd1b0; --accent-ink:#06201a; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.15rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.02em}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-family:var(--head);font-weight:500;font-size:1rem}
+nav div{display:flex;gap:1.5rem;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;padding:3rem 0 5rem}
+.hero h1{font-size:clamp(3.2rem,9vw,6.4rem);font-weight:700}
+.hero p.lead{font-size:1.4rem;max-width:30rem;margin:1.5rem 0 0;color:var(--muted)}
+.chat{background:var(--surface);border:1px solid var(--line);border-radius:1.25rem;padding:1.25rem;display:flex;flex-direction:column;gap:.7rem;min-height:26rem}
+.msg{max-width:85%;padding:.7rem 1rem;border-radius:1.1rem;font-size:1.05rem;line-height:1.45;opacity:0;transform:translateY(8px);animation:pop .5s forwards}
+.in{background:var(--bg);border-bottom-left-radius:.3rem;align-self:flex-start}
+.out{background:var(--out);border-bottom-right-radius:.3rem;align-self:flex-end}
+.msg:nth-child(1){animation-delay:.3s}.msg:nth-child(2){animation-delay:1.3s}.msg:nth-child(3){animation-delay:2.8s}
+.msg:nth-child(4){animation-delay:3.8s}.msg:nth-child(5){animation-delay:5.3s}.msg:nth-child(6){animation-delay:6.2s}
+@keyframes pop{to{opacity:1;transform:none}}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-family:var(--head);font-weight:700;font-size:1rem;padding:.7rem 1.2rem;border-radius:.6rem;text-decoration:none}
+.chat .btn{align-self:flex-end}
+/* sections */
+section{padding:4rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:2rem}
+.row{display:grid;grid-template-columns:14rem 1fr;gap:1rem 3rem;padding:1.75rem 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row h3{font-size:1.3rem}
+.row .meta{color:var(--muted);font-size:1rem;margin-top:.35rem}
+.row p{margin:0 0 .6rem;max-width:42rem}
+.stack{font-family:var(--head);font-size:.9rem;color:var(--accent);font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.skills h3{font-size:1.1rem;margin-bottom:.5rem}
+.skills p{margin:0;color:var(--muted);font-size:1.05rem}
+.contact{text-align:left}
+.contact p{max-width:34rem;font-size:1.3rem;margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:1rem}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:2rem;padding-bottom:3rem}
+  .row{grid-template-columns:1fr}
+  .chat{min-height:0}
+}
+@media (prefers-reduced-motion:reduce){.msg{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <span>Abisekh T</span>
+    <div><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Abisekh T</h1>
+      <p class="lead">AI/ML developer in Tamil Nadu, India. Three years of building NLP chatbots and GenAI planning systems, from data preprocessing to production deployment.</p>
+    </div>
+    <div class="chat" role="img" aria-label="A short chat: what Abisekh builds, what he has shipped, and how to reach him">
+      <div class="msg in">What does Abisekh build?</div>
+      <div class="msg out">NLP chatbots and GenAI planners that turn messy user input into API calls and structured answers.</div>
+      <div class="msg in">Anything shipped?</div>
+      <div class="msg out">A travel chatbot that understands intent and pulls live flight and hotel data, and a trip planner that writes day-wise itineraries.</div>
+      <div class="msg in">How do I reach him?</div>
+      <a class="msg out btn" href="#contact">Say hello</a>
+    </div>
+  </header>
+</div>
+
+<section id="work"><div class="wrap">
+  <h2>Selected work</h2>
+  <article class="row">
+    <div><h3>AI travel chatbot</h3><div class="meta">DatadesQ.AI</div></div>
+    <div>
+      <p>An NLP chatbot that classifies what travelers want (flights, hotels, attractions, packages) and extracts origin, destination, dates and passenger details from free text.</p>
+      <p>When a request is incomplete, it asks follow-up questions. Predictions feed an inference pipeline that calls vendor REST APIs for real-time results, served through Flask for the frontend.</p>
+      <div class="stack">Python, Keras, TensorFlow, Flask, REST APIs</div>
+    </div>
+  </article>
+  <article class="row">
+    <div><h3>AI trip planner</h3><div class="meta">DatadesQ.AI</div></div>
+    <div>
+      <p>Generates day-wise itineraries from attraction APIs. Where attraction data is missing, GPT-based generation fills the gap with structured JSON itineraries and travel descriptions.</p>
+      <p>Prompts are designed to return consistent, machine-readable JSON, with validation across API-based and AI-generated output. An image API adds destination visuals to each plan.</p>
+      <div class="stack">OpenAI API, Flask, REST APIs, JSON</div>
+    </div>
+  </article>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <article class="row">
+    <div><h3>AI/ML Developer</h3><div class="meta">DatadesQ.AI, Salem<br>October 2023 to present</div></div>
+    <div><p>Build and deploy the company’s AI products end to end: intent classification, entity extraction, conversation flow, third-party API integration, GenAI itinerary generation and the Flask services that connect them to the frontend.</p></div>
+  </article>
+  <article class="row">
+    <div><h3>Post Graduate Program in Data Science and Engineering</h3><div class="meta">Great Lakes Institute of Management, Chennai<br>2022 to 2023</div></div>
+    <div></div>
+  </article>
+  <article class="row">
+    <div><h3>B.E. in Electrical and Electronics Engineering</h3><div class="meta">Dr. Mahalingam College of Engineering and Technology, Coimbatore<br>2018 to 2022</div></div>
+    <div></div>
+  </article>
+  <article class="row">
+    <div><h3>Certifications</h3></div>
+    <div><p>Python Programming Workshop, ITB Spoken Tutorial<br>SQL (Basic), HackerRank</p></div>
+  </article>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Machine learning</h3><p>Supervised and unsupervised learning, NLP, deep learning with Keras and TensorFlow</p></div>
+    <div><h3>Python</h3><p>NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn, StatsModels</p></div>
+    <div><h3>Building and deploying</h3><p>Flask, OpenAI API, REST API development, model deployment</p></div>
+    <div><h3>Databases</h3><p>MongoDB, MySQL</p></div>
+    <div><h3>Analysis</h3><p>Tableau, hypothesis testing, chi-square, ANOVA, Z-test, T-test</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2>Let’s talk</h2>
+  <p>Open to AI/ML and NLP roles. The fastest way to reach me is email.</p>
+  <a class="btn" href="mailto:abisekht11@gmail.com?subject=Hello%20Abisekh">abisekht11@gmail.com</a>
+  <a class="btn" href="https://www.linkedin.com/in/abisekh-t-63864a176/" style="margin-left:.5rem">LinkedIn</a>
+</div></section>
+
+<footer><div class="wrap">© 2026 Abisekh T</div></footer>
+</body>
+</html>
